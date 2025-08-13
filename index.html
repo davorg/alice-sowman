@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alice Sowman — Reimagining Diana</title>
+  <meta name="description" content="Official website of novelist Alice Sowman, author of Reimagining Diana: An Alternative History. London-based writer of bold, research-rich alternative histories." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14; /* deep navy */
+      --card:#121722; /* panel */
+      --text:#EEF2F7;
+      --muted:#94A3B8;
+      --accent:#e6b800; /* warm gold */
+      --link:#84d2ff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0b0f14 0%,#121722 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:32px 20px}
+    header{display:grid;grid-template-columns:100px 1fr;gap:16px;align-items:center;margin-bottom:20px}
+    header img{width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.12)}
+    .title h1{font-family:"Playfair Display",serif;font-weight:700;margin:0;font-size:clamp(28px,4vw,40px)}
+    .title p{margin:.25rem 0 0;color:var(--muted)}
+
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-top:10px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:22px}
+    h2{font-family:"Playfair Display",serif;font-weight:700;margin:0 0 10px;font-size:clamp(22px,3.5vw,30px)}
+    .cta{display:inline-block;background:var(--accent);color:#111;padding:10px 16px;border-radius:10px;font-weight:700}
+    .cta:hover{filter:brightness(1.05)}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;margin-top:28px}
+    .grid .span-7{grid-column:span 7}
+    .grid .span-5{grid-column:span 5}
+
+    .cover{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:#0a0c10}
+
+    .meta{color:var(--muted);font-size:0.95rem;margin-top:8px}
+    footer{margin:40px 0 10px;color:var(--muted);font-size:.9rem}
+    .badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .badge{background:#0f1420;border:1px solid rgba(255,255,255,.08);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:.85rem}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .grid .span-7,.grid .span-5{grid-column:auto}
+      header{grid-template-columns:80px 1fr}
+      header img{width:80px;height:80px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="/img/alice.png" alt="Headshot of author Alice Sowman" />
+      <div class="title">
+        <h1>Alice Sowman</h1>
+        <p>Novelist • Alternative histories • South London</p>
+      </div>
+    </header>
+
+    <section class="hero card">
+      <div>
+        <h2><span style="color:var(--accent)">Coming Soon</span> — <em>Reimagining Diana</em></h2>
+        <p><strong>Reimagining Diana: An Alternative History</strong> asks a daring question: what if Diana had survived 1997? From quiet recovery to global advocacy, from Brexit’s crossroads to the birth of a modern presidency, Alice Sowman’s sweeping novel reimagines the late 20th and early 21st centuries through one woman’s enduring influence.</p>
+        <p class="meta">Hardback • eBook • Audiobook (Q4 release — provisional)</p>
+        <div class="badges">
+          <span class="badge">Literary alternative history</span>
+          <span class="badge">UK‑centred, globally aware</span>
+          <span class="badge">Research‑rich, character‑led</span>
+        </div>
+        <p style="margin-top:14px">
+          <a class="cta" href="mailto:alice@sowman.org?subject=Reimagining%20Diana%20—%20pre‑order%20interest">Register interest</a>
+          &nbsp; <a href="#about">About Alice</a>
+        </p>
+      </div>
+      <div>
+        <img class="cover" src="/img/cover.png" alt="Cover of Reimagining Diana by Alice Sowman" />
+      </div>
+    </section>
+
+    <section id="about" class="grid">
+      <article class="span-7 card">
+        <h2>About Alice</h2>
+        <p>Alice Sowman is a novelist and historian living in south London with her husband, fellow author Will Sowman, and their cats, Monty and Python. Her work blends meticulous research with bold reimaginings, exploring the <em>what ifs</em> that history leaves behind.</p>
+        <p>With a background in journalism and a fascination with the modern monarchy, Alice writes vivid, emotionally charged stories that humanise public figures while probing the social and political forces around them. <em>Reimagining Diana</em> is her most ambitious book to date — a sweeping, deeply imagined novel about influence, institutions, and the choices that make nations.</p>
+        <p class="meta">Agent enquiries: <a href="mailto:rights@sowman.org">rights@sowman.org</a></p>
+      </article>
+      <aside class="span-5 card">
+        <h2>Newsletter</h2>
+        <p>Get a note when the book is available, plus behind‑the‑scenes research snippets and event announcements.</p>
+        <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thanks — you’re on the list!';">
+          <label for="email" class="meta">Email address</label><br>
+          <input id="email" name="email" type="email" required placeholder="you@example.co.uk" style="width:100%;margin:6px 0 10px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:#0e1420;color:var(--text)">
+          <button class="cta" type="submit">Subscribe</button>
+        </form>
+        <p class="meta" style="margin-top:10px">No spam. Unsubscribe any time.</p>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div class="span-7 card">
+        <h2>Blurb</h2>
+        <p>Paris, 1997: a chance difference on a tunnel road sets history on a new course. In the years that follow, Diana returns to London, rebuilds her life under a stricter press landscape, and becomes a global advocate with growing political gravity. When Britain faces its defining choices — over identity, Europe, and the future of the Crown — her voice reframes the national conversation. <em>Reimagining Diana</em> traces a nation’s transformation through the prism of one woman’s survival, from vigil‑lit pavements to a winter’s day when the United Kingdom swears in its first president.</p>
+      </div>
+      <div class="span-5 card">
+        <h2>Events & Media</h2>
+        <ul>
+          <li>Autumn research talk (Southbank Centre) — <span class="meta">TBC</span></li>
+          <li>Podcast: <em>History Unbound</em> — “Writing Alternative Monarchy” — <span class="meta">coming soon</span></li>
+          <li>Press kit: <a href="#" onclick="alert('Press kit coming soon');return false;">download (PDF)</a></li>
+        </ul>
+        <p class="meta">For interviews & festivals: <a href="mailto:press@sowman.org">press@sowman.org</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Alice Sowman · London, UK · <a href="mailto:alice@sowman.org">alice@sowman.org</a></p>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
+
