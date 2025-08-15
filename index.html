@@ -64,16 +64,18 @@
 
     <section class="hero card">
       <div>
-        <h2><span style="color:var(--accent)">Coming Soon</span> — <em>Reimagining Diana</em></h2>
+        <h2><span style="color:var(--accent)">Out Now</span> — <em>Reimagining Diana</em></h2>
         <p><strong>Reimagining Diana: An Alternative History</strong> asks a daring question: what if Diana had survived 1997? From quiet recovery to global advocacy, from Brexit’s crossroads to the birth of a modern presidency, Alice Sowman’s sweeping novel reimagines the late 20th and early 21st centuries through one woman’s enduring influence.</p>
-        <p class="meta">Hardback • eBook • Audiobook (Q4 release — provisional)</p>
+        <p class="meta">Paperback • eBook • Audiobook (Q4 release — provisional)</p>
         <div class="badges">
           <span class="badge">Literary alternative history</span>
           <span class="badge">UK‑centred, globally aware</span>
           <span class="badge">Research‑rich, character‑led</span>
         </div>
         <p style="margin-top:14px">
-          <a class="cta" href="mailto:alice@sowman.org?subject=Reimagining%20Diana%20—%20pre‑order%20interest">Register interest</a>
+          <a class="cta btn btn-primary"
+             data-amazon-asin="B0FMJZ83GF"
+             id="buyNowHero"></a>
           &nbsp; <a href="#about">About Alice</a>
         </p>
       </div>
@@ -122,6 +124,16 @@
     </footer>
   </div>
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script src="https://cdn.davecross.co.uk/js/amazon-store/v1/amazon-store.min.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Wire the main CTA + any other Amazon buttons/links on the page
+      AmazonStore.enhanceAll({ tag: 'davblog-21' });
+
+      // If you added the optional grid above:
+      AmazonStore.renderStoreGridAll({ tag: 'davblog-21' });
+    });
+</script>
 </body>
 </html>
 
